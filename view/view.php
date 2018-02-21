@@ -21,4 +21,7 @@ elseif (($page == "sub_failed")) {
 elseif (($page == "user_sub")) {
     display_user_sub();
 }
+elseif (($page == "offer-selection")) {
+    display_offer_selection($type_list, $offer_list);
+}
 

@@ -47,7 +47,13 @@ if(isset($_GET["propos"])){
     $page = "propos";
 }
 
+//page choix offre
+if(isset($_GET["offer-selection"])){
+    $type_list = get_all_type_offer($c);
+    $offer_list = get_all_offers($c);
 
+    $page = "offer-selection";
+}
 
 //formulaire de modification d'information
 if(isset($_GET["infoform"])){

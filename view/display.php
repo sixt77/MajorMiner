@@ -51,3 +51,6 @@ function display_signup_failed(){
 
 }
 
+function display_offer_selection($type_list, $offer_list){
+    require ("pages/offer-selection.php");
+}
