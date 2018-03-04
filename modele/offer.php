@@ -33,8 +33,15 @@ function get_all_type_offer($c) {
         echo  '<script>type_list['.$loop.'] =["'.$donnees['type'].'"];</script>';
         $loop++;
     }
-
-
-
     return $type_list;
+}
+function susbscribe_offer_by_id($iduser, $idoffer, $adress, $c){
+    $date = date('Y-m-d H:i:s');
+    $sql = ("INSERT INTO contrat(adresse, date, idclient, idoffre) VALUES('$adress','$date','$iduser' ,'$idoffer')");
+    if(mysqli_query($c,$sql)){
+        return true;
+    }
+    else{
+        return false;
+    }
 }

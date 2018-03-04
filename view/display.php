@@ -54,3 +54,11 @@ function display_signup_failed(){
 function display_offer_selection($type_list, $offer_list){
     require ("pages/offer-selection.php");
 }
+
+function display_account_verification(){
+    require ("pages/account-verification.php");
+}
+
+function display_payement(){
+    require ("pages/payement.php");
+}

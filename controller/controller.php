@@ -51,8 +51,26 @@ if(isset($_GET["propos"])){
 if(isset($_GET["offer-selection"])){
     $type_list = get_all_type_offer($c);
     $offer_list = get_all_offers($c);
-
     $page = "offer-selection";
+}
+
+//verification de la connection pour l'achat
+if(isset($_GET["account-verification"])){
+    $page = "account-verification";
+}
+
+//recuperation adresse
+if(isset($_GET["payement"])){
+    $page = "payement";
+}
+//recuperation adresse
+if(isset($_GET["subscribe"])){
+    if(susbscribe_offer_by_id($_POST['idclient'], $_POST['idoffer'], $_POST['adress'], $c)){
+        $page = "subscribe_sucess";
+    }
+    else {
+        $page = "subscribe_failed";
+    }
 }
 
 //formulaire de modification d'information

@@ -24,4 +24,9 @@ elseif (($page == "user_sub")) {
 elseif (($page == "offer-selection")) {
     display_offer_selection($type_list, $offer_list);
 }
-
+elseif (($page == "account-verification")) {
+    display_account_verification();
+}
+elseif (($page == "payement")) {
+    display_payement();
+}

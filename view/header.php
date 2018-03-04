@@ -7,6 +7,7 @@
     <link href="asset/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="asset/css/main.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="asset/js/pre_load.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
